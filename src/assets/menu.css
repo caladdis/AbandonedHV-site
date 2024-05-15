@@ -1,6 +1,6 @@
 :root {
   /* this is the height of the header bar */
-  --header-height: 130px;
+  /*--header-height: 130px;*/
   /* this is the background color of the header bar and panel */
   --menu-bg: #9ae9cf00;
   --menu-highlight-hover: rgba(255, 255, 255, 0);
@@ -10,7 +10,7 @@
   /* leave this on - it helps size things consistently */
   box-sizing: content-box;
   /* border: 1px solid red; */
-}
+}*
 
 .skip-link {
   opacity: 0;
@@ -36,7 +36,7 @@
   align-items: stretch;
   width: 100%;
   height: var(--header-height);
-  position: fixed;
+  position: static;
   z-index: 10;
   top: 0;
   left: 0;
@@ -75,7 +75,6 @@
     display:flex;
     justify-content: space-around;
     background-color:rgba(0, 0, 0, 0.701);
-    padding:25px;
     max-width: 100vw;
   pointer-events: none;
   /* you can replace this with a different transform to change the direction it moves out in */
@@ -125,7 +124,7 @@
 }
 /* this makes sure the header doesn't cover any page content */
 main {
-  margin-top: var(--header-height);
+  margin-top: var(100px);
 }
 
 /* this media query sets the point where the layout transitions from top bar to hamburger */
