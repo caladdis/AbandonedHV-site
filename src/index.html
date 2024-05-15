@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'head', title:"Abandoned Hudson Valley' %}
-  <body class="home">
-    {% include 'header' %}
-     <main>
-            <div id="locations" class="box"> 
-                <h2>Locations</h2>
-            </div>
-            <div id="community" class="box">
-                <h2>Community</h2>
-            </div>
-            <div id="news" class="box">
-                <h2 >News</h2>
-            </div>    
-                
-        </main>
+  <body class="home"> 
+     {% include 'header', title:"Abandoned Hudson Valley' %}
+    <main id="main-content">
+        <div id="locations" class="box"> 
+            <h2>Locations</h2>
+        </div>
+        <div id="community" class="box">
+            <h2>Community</h2>
+        </div>
+        <div id="news" class="box">
+            <h2 >News</h2>
+        </div>    
+      </main>
     {% include 'footer' %}
   </body>
 </html>

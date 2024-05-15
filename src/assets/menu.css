@@ -2,8 +2,8 @@
   /* this is the height of the header bar */
   --header-height: 130px;
   /* this is the background color of the header bar and panel */
-  --menu-bg: #9ae9cf;
-  --menu-highlight-hover: white;
+  --menu-bg: #9ae9cf00;
+  --menu-highlight-hover: rgba(255, 255, 255, 0);
 }
 
 * {
@@ -72,7 +72,11 @@
 
 /* this is the class that is applied when the mobile nav disappears */
 .nav-items-list-hidden {
-  opacity: 0;
+    display:flex;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.701);
+    padding:25px;
+    max-width: 100vw;
   pointer-events: none;
   /* you can replace this with a different transform to change the direction it moves out in */
   transform: translateY(-100px);
