@@ -40,7 +40,7 @@ background-position:top;
 min-height: 375px;
 min-height: 400px;
 display: flex;
-justify-content: space-around;
+justify-content: flex-end;
 flex-direction: column;
 }
 
@@ -129,6 +129,15 @@ align-items: center;
 gap: 13px;
 }
 
+.hometext{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.696);
+    height:20%;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 .locations main{
     padding: 10px ;
 }
