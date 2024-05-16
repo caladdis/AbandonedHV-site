@@ -118,6 +118,7 @@
   border: none;
   background: transparent;
   z-index: 1000;
+  color:white
 }
 .btn-toggle-menu:hover {
   background-color: white;
@@ -145,6 +146,7 @@ main {
     flex-direction: row;
     position: static;
     height: auto;
+    width: 100vw;
     gap: 1rem;
     z-index: 100;
   }
@@ -153,7 +155,7 @@ main {
     opacity: 1;
     pointer-events: all;
     transform: none;
-    transition: all 0.3s;
+    transition: all 0.3s;  
   }
   /* this is the selector that hides the nav on desktop */
   .btn-toggle-menu {

@@ -43,6 +43,17 @@ justify-content: space-around;
 flex-direction: column;
 }
 
+#TitleLocations{
+    background-image: url('locations 1 (2).jpg');
+    background-size: cover;
+    background-position:top;
+    min-height: 375px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 header div {
 flex-grow: 1;
 
@@ -101,9 +112,35 @@ background-size: cover;
 
 }
 #news{
-background-image: url('news page 1 (2).jpg');
+background-image: url('Casino Trail.png');
 background-position: center;
 background-size: cover;
+}
+
+.locationdiscriptions img{
+    min-height: 180px;
+    width: 90%;
+    min-width: 270px;
+    max-width: 500px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationdiscriptions{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Location-iframe{
+    display:flex;
+    justify-content: center;
+}
+
+.locationH2{
+    display:flex;
 }
 footer{
 text-align: center;
