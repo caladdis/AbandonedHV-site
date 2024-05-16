@@ -65,7 +65,16 @@ flex-direction: column;
     justify-content: space-around;
     flex-direction: column;
 }
-
+#TitleAbout{
+    background-image: url('edited community 2 (2).jpg');
+    background-size: cover;
+    background-position:top;
+    min-height: 375px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 header div {
 flex-grow: 1;
 display: flex;
@@ -172,8 +181,8 @@ align-items: center;
 background-image: url('locations 1 (2).jpg');
 background-position: center;
 background-size: cover;
-
 }
+
 #about{
 background-image: url('edited community 2 (2).jpg');
 background-position: center;
