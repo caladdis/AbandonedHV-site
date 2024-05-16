@@ -132,7 +132,10 @@ background-size: cover;
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-size: 25px;
 }
+
 
 .Location-iframe{
     display:flex;
@@ -141,6 +144,7 @@ background-size: cover;
 
 .locationH2{
     display:flex;
+    justify-content: center;
 }
 footer{
 text-align: center;
