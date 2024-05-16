@@ -55,6 +55,16 @@ flex-direction: column;
     flex-direction: column;
 }
 
+#TitleNews{
+    background-image: url('Casino Trail.png');
+    background-size: cover;
+    background-position:top;
+    min-height: 375px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 header div {
 flex-grow: 1;
 
@@ -155,6 +165,7 @@ background-size: cover;
     justify-content: center;
     padding-bottom:20px;
 }
+
 footer{
 text-align: center;
 font-size: 20px;
