@@ -65,9 +65,9 @@ flex-direction: column;
     justify-content: space-around;
     flex-direction: column;
 }
+
 header div {
 flex-grow: 1;
-
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -78,6 +78,7 @@ nav{
     justify-content: space-around;
     max-width: 100vw;
     }
+
 nav a {
 color: #FFF;
 text-align: center;
@@ -88,24 +89,65 @@ text-transform: uppercase;
 }
 
 main{
+
+}
+
+main.news{
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.news img{
+    min-height: 180px;
+    width: 90%;
+    min-width: 270px;
+    max-width: 500px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.news H2{
+    font-size:30px;
+}
+
+.news a h2{
+    font-family: Crimson Text, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.home main{
 text-align: center;
 font-size: 29px;
 font-weight: 800;
 text-transform: uppercase;
+padding: 60px;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 13px;
 }
 
-#home-main-content{
-    padding: 60px
-}
-
-#Location-main-content{
+.locations main{
     padding: 10px ;
 }
-
+#Elda-Castle-Article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width:70%;
+    padding-top:20px;
+}
+#Poughkeepsie-Abandoned-Hospital-Article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width:70%;
+    padding-top:20px;
+}
 .box {
 min-height: 180px;
 width: 90%;
@@ -123,7 +165,7 @@ background-position: center;
 background-size: cover;
 
 }
-#community{
+#about{
 background-image: url('edited community 2 (2).jpg');
 background-position: center;
 background-size: cover;
@@ -135,7 +177,7 @@ background-position: center;
 background-size: cover;
 }
 
-.locationdiscriptions img{
+.locations img{
     min-height: 180px;
     width: 90%;
     min-width: 270px;
@@ -146,7 +188,7 @@ background-size: cover;
     align-items: center;
 }
 
-.locationdiscriptions{
+.locations{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -160,11 +202,22 @@ background-size: cover;
     justify-content: center;
 }
 
-.locationH2{
+.locations H2{
     display:flex;
     justify-content: center;
     padding-bottom:20px;
+    font-size:30px;
 }
+
+/*.locations p{
+    font-family: Crimson Text, Verdana, Geneva, Tahoma, sans-serif;
+}*/
+
+a{ 
+transition: 0.5em ease;
+text-decoration: none;
+}
+
 
 footer{
 text-align: center;
@@ -175,7 +228,7 @@ background-color:#382F3A;
  padding: 20px; 
 }
 @media (min-width:800px){
-main{
+    .home main{
     flex-direction: row;
 }
 }
