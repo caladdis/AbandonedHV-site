@@ -1,8 +1,8 @@
 :root {
   /* this is the height of the header bar */
-  /*--header-height: 130px;*/
+  --header-height: 130px;
   /* this is the background color of the header bar and panel */
-  --menu-bg: #9ae9cf00;
+  --menu-bg: rgb(13 13 13 / 70%);
   --menu-highlight-hover: rgba(255, 255, 255, 0);
 }
 
@@ -10,7 +10,7 @@
   /* leave this on - it helps size things consistently */
   box-sizing: content-box;
   /* border: 1px solid red; */
-}*
+}
 
 .skip-link {
   opacity: 0;
@@ -32,11 +32,11 @@
 .main-nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   width: 100%;
   height: var(--header-height);
-  position: static;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
@@ -72,10 +72,7 @@
 
 /* this is the class that is applied when the mobile nav disappears */
 .nav-items-list-hidden {
-    display:flex;
-    justify-content: space-around;
-    background-color:rgba(0, 0, 0, 0.701);
-    max-width: 100vw;
+  opacity: 0;
   pointer-events: none;
   /* you can replace this with a different transform to change the direction it moves out in */
   transform: translateY(-100px);
@@ -118,14 +115,15 @@
   border: none;
   background: transparent;
   z-index: 1000;
-  color:white
+  color:white;
 }
-.btn-toggle-menu:hover {
-  background-color: white;
+
+.btn-toggle-menu svg {
+  fill: white;
 }
 /* this makes sure the header doesn't cover any page content */
 main {
-  margin-top: var(100px);
+  margin-top: var(--header-height);
 }
 
 /* this media query sets the point where the layout transitions from top bar to hamburger */
@@ -146,7 +144,6 @@ main {
     flex-direction: row;
     position: static;
     height: auto;
-    width: 100vw;
     gap: 1rem;
     z-index: 100;
   }
@@ -155,7 +152,7 @@ main {
     opacity: 1;
     pointer-events: all;
     transform: none;
-    transition: all 0.3s;  
+    transition: all 0.3s;
   }
   /* this is the selector that hides the nav on desktop */
   .btn-toggle-menu {
