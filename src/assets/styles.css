@@ -74,6 +74,7 @@ h2 {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    position: relative;
 }
 
 #TitleLocations {
@@ -85,6 +86,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    position: relative;
 }
 
 #TitleNews {
@@ -96,6 +98,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    position: relative;
 }
 
 #TitleAbout {
@@ -211,6 +214,8 @@ main.news {
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .social-media {
