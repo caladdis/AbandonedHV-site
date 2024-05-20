@@ -147,6 +147,7 @@ h2 {
 .Location-iframe {
     display: flex;
     justify-content: center;
+    width:80%;
 }
 
 .locations H2 {
@@ -298,4 +299,12 @@ footer {
     .home main {
         flex-direction: row;
     }
+}
+@media (max-width:766px) {
+    H1{ font-size: 40px;   
+    }
+    .hometext{ 
+        font-size:10px;
+    }
+    .HeaderH2{font-size:20px}
 }
