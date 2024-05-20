@@ -72,6 +72,18 @@ h2 {
     min-height: 375px;
     min-height: 400px;
     display: flex;
+  justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+#TitleCommunity {
+    background-image: url('Snapchat-1075491243 1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 375px;
+    min-height: 400px;
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
     position: relative;
