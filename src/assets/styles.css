@@ -6,7 +6,7 @@ a {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    text-decoration: none transition: 0.5em ease;
+    transition: 0.5em ease;
     text-decoration: none;
 }
 
@@ -22,7 +22,9 @@ body {
     background-position: center;
     margin: 0px;
 }
-
+main{
+    padding:0
+}
 h1 {
     text-align: center;
     font-family: "Stick No Bills", sans-serif;
@@ -69,7 +71,6 @@ h2 {
     background-image: url('celing tiles.jpg');
     background-size: cover;
     background-position: top;
-    min-height: 375px;
     min-height: 400px;
     display: flex;
   justify-content: space-around;
@@ -81,7 +82,6 @@ h2 {
     background-image: url('Snapchat-1075491243 1.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 375px;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
@@ -93,7 +93,6 @@ h2 {
     background-image: url('locations 1 (2).jpg');
     background-size: cover;
     background-position: top;
-    min-height: 375px;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
@@ -105,7 +104,6 @@ h2 {
     background-image: url('Casino Trail.png');
     background-size: cover;
     background-position: top;
-    min-height: 375px;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
@@ -117,7 +115,6 @@ h2 {
     background-image: url('edited community 3.jpg');
     background-size: cover;
     background-position: top;
-    min-height: 375px;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
@@ -211,7 +208,7 @@ main.news {
     font-size: 29px;
     font-weight: 800;
     text-transform: uppercase;
-    padding: 60px;
+    padding: 0px 60px 60px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,22 +235,15 @@ main.news {
     justify-content: center;
 }
 
-#Elda-Castle-Article {
+#Article {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     width: 70%;
     padding-top: 20px;
-}
-
-#Poughkeepsie-Abandoned-Hospital-Article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    width: 70%;
-    padding-top: 20px;
+    margin-bottom: 20px;
+    height: 400px;
 }
 
 .box {
@@ -273,7 +263,7 @@ main.news {
     background-size: cover;
 }
 
-#about {
+#community {
     background-image: url('edited community 2 (2).jpg');
     background-position: center;
     background-size: cover;
@@ -299,6 +289,7 @@ footer {
     .home main {
         flex-direction: row;
     }
+    main.news{flex-direction:row}
 }
 @media (max-width:766px) {
     H1{ font-size: 40px;   
