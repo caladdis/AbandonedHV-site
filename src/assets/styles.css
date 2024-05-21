@@ -23,7 +23,7 @@ body {
     margin: 0px;
 }
 main{
-    padding:0
+    margin:20px
 }
 h1 {
     text-align: center;
@@ -60,6 +60,10 @@ nav a {
 h2 {
     text-align: center;
     font-size: 30px;
+}
+
+.header-logo-link{
+    padding: 10px
 }
 
 #HudsonValley {
@@ -208,7 +212,7 @@ main.news {
     font-size: 29px;
     font-weight: 800;
     text-transform: uppercase;
-    padding: 0px 60px 60px 60px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
